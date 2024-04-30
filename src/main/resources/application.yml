@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5434/medication-management_local
+    username: medication-management_local
+    password:
+    hikari:
+      maximum-pool-size: 40
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
